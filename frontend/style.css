@@ -1,0 +1,130 @@
+/* LegalEase — printed legal form, ink on warm paper */
+
+:root {
+    --paper: #f6f1e7;
+    --paper-dark: #efe7d8;
+    --ink: #1c1a16;
+    --ink-soft: #4a463e;
+    --rule: #c9bfa8;
+    --accent: #7a1f2b;
+}
+
+html, body, [class*="st-"] {
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    color: var(--ink);
+}
+
+.stApp {
+    background-color: var(--paper);
+}
+
+#MainMenu, header[data-testid="stHeader"] {
+    background: transparent;
+}
+
+.block-container {
+    max-width: 880px;
+    padding-top: 2rem;
+}
+
+.legalease-header {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 0.9rem;
+    margin-bottom: 1.6rem;
+}
+
+.legalease-header img {
+    height: 48px;
+}
+
+.legalease-header .title-block h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.04em;
+    margin: 0;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.legalease-header .title-block p {
+    margin: 0.1rem 0 0 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.legalease-rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 1.4rem 0;
+}
+
+.stTextInput > div > div > input,
+.stTextArea textarea,
+.stSelectbox > div > div {
+    background-color: #fffdf8 !important;
+    border: 1px solid var(--rule) !important;
+    border-radius: 2px !important;
+    color: var(--ink) !important;
+    font-family: "Georgia", serif !important;
+}
+
+label, .stMarkdown p {
+    color: var(--ink) !important;
+}
+
+.stButton > button, .stDownloadButton > button {
+    background-color: var(--accent);
+    color: #f6f1e7;
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    font-family: "Georgia", serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    padding: 0.5rem 1.4rem;
+}
+
+.stButton > button:hover, .stDownloadButton > button:hover {
+    background-color: #5e1620;
+    border-color: #5e1620;
+    color: #f6f1e7;
+}
+
+.legalease-sheet {
+    background-color: #fffdf8;
+    border: 1px solid var(--rule);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    padding: 2.4rem 2.8rem;
+    margin-top: 1.2rem;
+}
+
+.legalease-sheet h3 {
+    font-size: 1.02rem;
+    letter-spacing: 0.03em;
+    margin-top: 1.4rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.2rem;
+}
+
+.legalease-sheet p {
+    font-size: 0.97rem;
+    line-height: 1.65;
+    color: var(--ink);
+    margin: 0.4rem 0;
+    text-align: justify;
+}
+
+.legalease-footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.03em;
+    margin-top: 1.8rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 0.8rem;
+}
