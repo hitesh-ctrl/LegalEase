@@ -57,3 +57,6 @@ pytest tests/ -v
 
 - `GET /` — health/welcome message
 - `POST /generate` — body `{document_type, parties, terms, dates}` → `{document: "..."}`
+
+
+Made with ❤️ by Hitesh, Navaneedan, Muthurajesh, Shrijesh, Saravanakumar
